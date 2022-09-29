@@ -1,0 +1,42 @@
+ul{
+    position: absolute;
+    top: 100px;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 100px;
+background-color: aquamarine;
+border: 2px solid gray ;
+
+
+}
+
+li a {
+
+    border: 2px solid blue;
+    display: block;
+    color:rosybrown;
+    padding: 7px 10px;
+    text-decoration: none;
+    
+}
+
+li{
+    text-align: center;
+    border-bottom: 1px solid blanchedalmond;
+
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+li  .active {
+    background-color:rgb(202, 30, 122);
+    color: rgb(179, 129, 185);
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(245, 26, 26);
+    color: rgb(67, 212, 218);
+  }

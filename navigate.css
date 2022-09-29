@@ -1,0 +1,103 @@
+h1{
+align-content: center;
+text-align: center;
+
+
+
+}
+
+.Vert{
+    position: absolute;
+    top: 100px;
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 100px;
+background-color: aquamarine;
+border: 2px solid gray ;
+
+}
+
+.Line a {
+
+    border: 2px solid blue;
+    display: block;
+    color:rosybrown;
+    padding: 7px 10px;
+    text-decoration: none;
+    
+}
+
+.Line{
+    text-align: center;
+    border-bottom: 1px solid blanchedalmond;
+
+}
+
+.Line:last-child{
+    border-bottom: none;
+}
+
+.Line  #active {
+    background-color:rgb(202, 30, 122);
+    color: rgb(179, 129, 185);
+  }
+  
+  .Line a:hover:not(#active) {
+    background-color: rgb(245, 26, 26);
+    color: rgb(67, 212, 218);
+  }
+
+
+
+
+
+  #hor{
+float:left;
+flex-direction: row;
+  }
+
+  #Horizantal
+  {
+   position: absolute;
+   top: 1px; 
+   width: 1300px;
+    height: 39px;
+    list-style-type: none;
+    margin: 100px;
+    padding: 0;
+   
+    background-color: rgb(183, 219, 183);
+    border: 2px solid rgb(73, 73, 205);
+
+
+}
+
+
+#hor :last-child{
+   border-right: none;
+}
+
+#hor .A{
+
+    display: block;
+    color: rgb(94, 14, 87);
+    text-align: center;
+    padding: 9px 12px;
+    text-decoration: none;
+    border: 2px solid rgb(42, 31, 186);
+    
+    
+   
+}
+
+#hor .A:hover:not(#active)
+{
+background-color: blueviolet;
+
+}
+
+#active{
+    background-color: rgb(244, 36, 213);
+}
+
