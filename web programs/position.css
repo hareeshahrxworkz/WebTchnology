@@ -1,0 +1,38 @@
+.absolute
+{
+
+    position: absolute;
+bottom: 0px;
+}
+
+.reletive
+{
+    position: relative;
+    bottom: 0px;
+}
+
+.fixed
+{
+
+position: fixed;
+
+top: 0;
+
+}
+
+.abs{
+
+    position: absolute;
+
+top: 0;
+left: 0;
+
+}
+
+.image{
+
+
+  position: relative;
+  
+
+}
