@@ -4,7 +4,7 @@ ul{
 list-style-type: none;
 padding: 0;
 margin: 0;
-width: 100px;
+width: 150px;
 background-color: aquamarine;
 border: 2px solid gray ;
 
@@ -23,7 +23,7 @@ li a {
 
 li{
     text-align: center;
-    border-bottom: 1px solid blanchedalmond;
+    border-bottom: 2px solid blanchedalmond;
 
 }
 
