@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+    <script>
+
+
+
+function login(){
+
+    var Email=document.getElementById("email").value
+    var password=document.getElementById("pass").value
+
+
+    var obj={"email":Email,"pass":password}
+
+    var local=localStorage.getItem("java")
+    console.log(local)
+    var parse=JSON.parse(local)
+    console.log(parse)
+
+
+    if(Email!=parse.email )
+    
+    {
+
+        console.log("Username is wrong")
+        var Email=document.getElementById("abc").innerHTML="Email adress is wrong"
+        document.getElementById("abc").style.color="red"
+
+
+    }
+       if(password!=parse.password )
+       {
+
+        console.log("password is wrong")
+        var Email=document.getElementById("aaa").innerHTML="password is wrong"
+        document.getElementById("aaa").style.color="red"
+
+       }
+
+    
+    else{
+        console.log("Login sucessful")
+
+    }
+
+
+
+}
+
+    </script>
+
+</head>
+<body>
+    <form >
+       
+            <div>
+                <label > Email</label>
+                <input type="email" id="email">
+                <span id="abc"></span>
+                 
+            </div>
+            <div>
+                <label > password</label>
+                <input type="password" id="pass">
+                <span id="aaa"></span>
+                 
+            </div>
+        
+            <button type="button" onclick="login()" > submit </button>
+            </form>
+</body>
+</html>

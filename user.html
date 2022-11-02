@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>user</title>
+
+    <script>
+
+function validation(){
+
+
+    
+
+
+    var user=document.getElementById("user").value
+    var Email=document.getElementById("email").value
+    var password=document.getElementById("pass").value
+
+console.log(user)
+console.log(Email)
+console.log(password)
+
+var object={"user":user,"email":Email,"password":password}
+console.log(object)
+
+var string=JSON.stringify(object)
+console.log(string)
+
+var local=localStorage.setItem("java",string)
+
+
+}
+
+    </script>
+
+
+</head>
+<body>
+    <form >
+<div>
+        <label > Username</label>
+        <input type="text" id="user">
+
+    </div>
+    <div>
+        <label > Email</label>
+        <input type="email" id="email">
+         
+    </div>
+    <div>
+        <label > password</label>
+        <input type="password" id="pass">
+         
+    </div>
+
+    <button type="button" onclick="validation()" > subject </button>
+    </form>
+    
+</body>
+</html>

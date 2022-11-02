@@ -1,0 +1,20 @@
+.relative
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 2px;
+}
+.absolute{
+    position: absolute;
+    bottom: 2px;
+    width: 200px;
+    height: 200px;
+}
+
+.fixed{
+
+    position: fixed;
+    top: 0px;
+}
+

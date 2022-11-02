@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>login Page</title>
+    <script>
+      function login() {
+        var email = document.getElementById("ema").value
+        var password = document.getElementById("pass").value
+
+        var pars = JSON.parse(localStorage.getItem("javascript"));
+        var obj = { email: email, Password: password };
+       console.log(pars)
+
+        if (obj.email == pars.Email && obj.Password == pars.Password) {
+          alert("login sucessful");
+location.href="http://facebook.com"
+location.href="./index.html"
+var a=document.createElement("IMG")
+ a.src="./4.jpg"
+document.body.appendChild(a)
+        } else {
+          alert("Please Enter valid Email and Password");
+        }
+
+
+
+      }
+
+      function register(){
+        console.log("hareesha")
+        window.location.href=("./form.html")
+
+
+
+
+}
+
+    </script>
+            <link rel="stylesheet" href="./boot.css">
+            <link rel="stylesheet" href="./forms.css">
+
+  </head>
+  <body>
+    
+  </div>
+
+    <p id="img"></p> -->
+       <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+          <div id="login-column" class="col-md-6">
+            <div id="login-box" class="col-md-12">
+             <form id="login-form" class="form" action="" method="post">
+               <h3 class="text-center text-info">Login</h3>
+               <div class="form-group">
+                 <label class="text-info">Emali:</label><br>
+                 <input type="email" class="form-control" placeholder="Enter registered Email id" name="email" id="ema" />
+                </div>
+            <div class="form-group">
+               <label for="password" class="text-info">Password:</label><br>
+               <input type="password"  class="form-control" name="password" placeholder="Enter Your password" id="pass" />
+              </div>
+           <div class="form-group">
+          <label for="remember-me" class="text-info"> <span></span></label><br>
+          <button class="btn btn-info btn-md" type="button" class="form-control"   onclick="login()">Login</button><span>        <button class="btn btn-info btn-md" type="button" class="form-control"   onclick="register()">  Register</button>
+          </span>
+
+          </div>
+       
+        </form>
+        </div>
+         </div>
+       </div>
+     </div>
+    </div>
+  </body>
+</html>

@@ -49,7 +49,9 @@ border: 2px solid gray ;
   }
 
 
-
+.float{
+    float: right;
+}
 
 
   #hor{
@@ -76,6 +78,7 @@ flex-direction: row;
 
 #hor :last-child{
    border-right: none;
+   float: right;
 }
 
 #hor .A{

@@ -1,0 +1,12 @@
+.har {
+
+    border: 5px solid green;
+    height: 200px;
+    width: 200px;
+}
+.bvc {
+    position: absolute;
+    border: 5px solid green;
+    height: 170px;
+    width: 190px;
+}

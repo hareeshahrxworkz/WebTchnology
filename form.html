@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" href="./boot.css">
+<link rel="stylesheet" href="./form.css">
+
+
+    <title>Document</title>
+    <script>
+function validate()
+{
+
+    var userName=document.getElementById("user").value
+    console.log(userName)
+    document.getElementById("username").innerHTML=userName
+    if(userName=="")
+    {
+        document.getElementById("usermsg").innerHTML="Please Enter Your Username"
+       document.getElementById("usermsg").style.color="red"
+       
+    }
+
+    var Email=document.getElementById("Email").value
+    console.log(Email)
+    document.getElementById("Email").innerHTML=Email
+
+    if(Email=="")
+    {
+        document.getElementById("emailmsg").innerHTML="Please Enter Your Email"
+       document.getElementById("emailmsg").style.color="red"
+    }
+
+    var Password=document.getElementById("password").value
+    console.log(Password)
+    document.getElementById("Password").innerHTML=Password
+
+    if(Password=="")
+    {
+        document.getElementById("passwordmsg").innerHTML="Please Enter Your Password"
+       document.getElementById("passwordmsg").style.color="red"
+    }
+
+var gender=Registrationform.gen
+
+
+
+if(gender[0].checked==false && gender[1].checked==false && gender[2].checked==false)
+{
+
+    document.getElementById("er").innerHTML="please Select Gender"
+    document.getElementById("er").style.color="red"
+
+}
+
+
+var gen=gender[0].checked
+ console.log(gen)
+
+if(gender[0].checked==true)
+
+    {
+document.getElementById("m").innerHTML="You ar selected gender is Male"
+
+
+}
+if(gender[1].checked==true)
+{
+    
+    document.getElementById("m").innerHTML="You ar selected gender is Female"
+
+}
+if(gender[2].checked==true)
+{
+    document.getElementById("m").innerHTML="You ar selected gender is Others"
+}
+
+var city=document.Registrationform.city.value
+
+if(city==0){
+
+    document.getElementById("m").innerHTML="Pleace Select city"
+    document.getElementById("m").style.color="red"
+
+
+}
+document.getElementById("citys").innerHTML=city
+
+var object={ "userName":userName,"Email":Email,"City":city,"Password":Password}
+
+var valid=JSON.parse(localStorage.getItem("javascript"))
+console.log(valid)
+if(object.Email==valid.Email){
+
+alert("email is alredy exist Please Try TO another Email id")
+
+return;
+
+}
+
+
+if(Email!=""&&Password!="")
+{
+localStorage.setItem("javascript",JSON.stringify(object))
+}
+
+
+
+
+if(Password!=""){
+alert("Registration sucessful please login here")
+}
+
+}
+
+function back (){
+    window.location.href=("./formlogin.html");
+
+}
+
+    </script>
+</head>
+<body>
+    
+
+
+
+
+
+<div id="reg">
+    <div class="container">
+        <div id="reg-row" class="row justify-content-center align-items-center">
+      <div id="reg-column" class="col-md-6">
+        <div id="reg-box" class="col-md-12">
+         <form name="Registrationform" id="login-form" class="form" action="" method="post">
+           <h3 class="text-center text-info">Register</h3>
+           <div class="form-group">
+             <label class="text-info">UserName:</label><br>
+             <input type="text" id="user"  class="form-control" placeholder="Enter Your UserName">
+             <span id="usermsg"></span>
+
+            </div>
+            <div class="form-group">
+                <label class="text-info">Email:</label><br>
+                <input type="email" class="form-control" id="Email" placeholder="Enter Your email">
+                <span id="emailmsg"></span>
+
+            </div>
+        <div class="form-group">
+           <label  class="text-info">Gender:</label><br>
+           <input  type="radio" value="Male"  name="gen" >Male
+           <input  type="radio" value="Female"  name="gen">Female
+           <input  type="radio" value="Others" name="gen">Other
+           <span id="er"></span>
+   
+           <span id="emailmsg"></span>        </div>
+
+
+
+           <div class="form-group">
+
+            <label  class="text-info">City:</label><br>
+<select name="city">
+<option value="0" > Select city</option>
+<option  >Banglore</option>
+<option  >chitradurga</option>
+<option  >chikkamagaluru</option>
+<option   >hassan</option>
+<option  >mysore</option>
+<option  >mandya</option>
+<option  >tumakur</option>
+<option  >davanagere</option>
+
+        </select>
+        <span id="m"></span>
+
+
+           </div>
+
+        <div class="form-group">
+            <label  class="text-info">Password:</label><br>
+            <input type="password" class="form-control" id="password" placeholder="Enter Your password">
+            <span id="passwordmsg"></span>
+
+         </div>
+
+       <div class="form-group">
+      <button class="btn btn-info btn-md" type="button" class="form-control"   onclick="validate()">  Register</button><span>    
+           <button class="btn btn-info btn-md" type="button" class="form-control" onclick="back()"> Back</a> </button> 
+      </span>
+
+      </div>
+   
+    </form>
+    </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+<div>
+    <p id="username"></p>
+    <p id="Email"></p>
+    <p id="Password"></p>
+    <p id="m"></p>
+    <p id="f"></p>
+    <p id="o"></p>
+    <p id="s"></p>
+
+    <p id="citys"></p>
+
+</div>
+</body>
+</html>
