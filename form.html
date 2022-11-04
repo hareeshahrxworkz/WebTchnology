@@ -90,12 +90,15 @@ var object={ "userName":userName,"Email":Email,"City":city,"Password":Password}
 
 var valid=JSON.parse(localStorage.getItem("javascript"))
 console.log(valid)
+if(valid!=null)
+{
 if(object.Email==valid.Email){
 
 alert("email is alredy exist Please Try TO another Email id")
 
 return;
 
+}
 }
 
 
