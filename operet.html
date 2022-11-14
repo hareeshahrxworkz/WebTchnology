@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function valid() {
+        var number = document.getElementById("num").value;
+       var even=document.getElementById("even")
+        var num = +number;
+
+        if (num >= 0) {
+          num;
+          for (var i = 0; i < 3; ++i) {
+            if (num % 2 == 0) {
+              even.innerHTML+="Even number is " + num +"<br>"
+              num = num + 2;
+            } else {
+              even.innerHTML+="Even number is " + num +"<br>"
+              num = num + 2;
+            }
+          }
+        
+        
+        
+    }
+    
+    
+    else {
+         even.innerHTML=("Enter Positive Number");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label> Enter Numbers only:</label>
+      <input type="text" placeholder="Enter number" id="num" />
+      <button type="button" onclick="valid()">Submit</button>
+    </div>
+    <div >
+      <p id="even"></p>
+      
+    </div>
+  </body>
+</html>
