@@ -69,8 +69,8 @@ var city=document.Registrationform.city.value
 
 if(city==0){
 
-    document.getElementById("m").innerHTML="Pleace Select city"
-    document.getElementById("m").style.color="red"
+    document.getElementById("city").innerHTML="Pleace Select city"
+    document.getElementById("city").style.color="red"
 
 
 }
