@@ -16,9 +16,9 @@ if(email=="" && password=="")
     if (obj.email == pars.Email && obj.Password == pars.Password) {
       alert("login sucessful");
 location.href="./MessageLogin.html"
-var a=document.createElement("IMG")
-a.src="./4.jpg"
-document.body.appendChild(a)
+// var a=document.createElement("IMG")
+// a.src="./4.jpg"
+// document.body.appendChild(a)
     } else {
       alert("Please Enter valid Email and Password");
     }
