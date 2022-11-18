@@ -112,3 +112,22 @@ function Login (){
     window.location.href=("./formlogin.html");
 
 }
+
+
+
+let is_show=true
+
+  let rev=document.getElementById("rev")
+    function show(){
+        if(is_show){
+
+            password.setAttribute('type','text')
+        }
+        else{
+            
+            password.setAttribute('type','password')
+
+        }
+        is_show=!is_show
+    }
+    

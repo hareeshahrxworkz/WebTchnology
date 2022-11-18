@@ -35,3 +35,20 @@ document.body.appendChild(a)
 
 
 }
+
+
+let is_show=true
+
+  let rev=document.getElementById("rev")
+    function show(){
+        if(is_show){
+
+            pass.setAttribute('type','text')
+        }
+        else{
+            
+            pass.setAttribute('type','password')
+
+        }
+        is_show=!is_show
+    }

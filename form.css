@@ -1,10 +1,8 @@
 
  body {
-    margin: 0;
-    padding: 0;
+  
     background-image: url(./a.jpg);
     background-size: cover;
-    height: 100;
   }
   #reg #reg-row #reg-column #reg-box {
     margin-top: 120px;
@@ -13,7 +11,10 @@
     border: 2px solid #b51212;
     background-color:rgb(243, 223, 222);
   }
-
+i{
+  margin-left:-0px;
+cursor: pointer;
+}
   
   #login .container #login-row #login-column #login-box #login-form {
     padding: 20px;
