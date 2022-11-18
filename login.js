@@ -31,7 +31,7 @@ function validate()
        document.getElementById("passwordmsg").style.color="red"
     }
 
-var gender=Registrationform.gen
+var gender=Registrationform.gen.value
 
 
 
@@ -76,7 +76,7 @@ if(city==0){
 }
 document.getElementById("citys").innerHTML=city
 
-var object={ "userName":userName,"Email":Email,"City":city,"Password":Password}
+var object={ "userName":userName,"Email":Email,"City":city,"Password":Password, "Gender":gender}
 
 var valid=JSON.parse(localStorage.getItem("javascript"))
 console.log(valid)
